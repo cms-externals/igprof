@@ -31,7 +31,7 @@
 # define TRAMPOLINE_SAVED       10      // 5+margin for saved prologue
 #elif __x86_64__
 # define TRAMPOLINE_JUMP        32      // jump to hook/old code
-# define TRAMPOLINE_SAVED       20      // was 10; endbr64 + rip-relative load needs 11+
+# define TRAMPOLINE_SAVED       16      // was 10; endbr64 + rip-relative load needs 11+
 #elif __ppc__
 # define TRAMPOLINE_JUMP        16      // jump to hook/old code
 # define TRAMPOLINE_SAVED       4       // one prologue instruction to save
